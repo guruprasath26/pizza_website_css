@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="demo2.css">
+    <title>horizontal scroll</title>
+</head>
+<body>
+    <div class="main-scroll">
+        <div>
+            <button class="icon" onclick="scrollr()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        </div>
+        <div class="cover">
+            <div class="scroll-images">
+                <div class="child">
+                    <img class="child-img" src="image/logoo.png">
+                    <h2>Pizza hut</h2>
+                </div>
+                <div class="child"><img class="child-img" src="image/logo.png"></div>
+                <div class="child"><img class="child-img" src="image/logoo.png"></div>
+                <div class="child"><img class="child-img" src="image/logo.png"></div>
+                <div class="child"><img class="child-img" src="image/logoo.png"></div>
+                <div class="child"><img class="child-img" src="image/logo.png"></div>
+            </div>
+        </div>
+        <div>
+            <button class="icon" onclick="scrolll()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+    <script>
+        function scrolll() {
+            var left = document.querySelector(".scroll-images")
+            left.scrollBy(350, 0)
+        }
+
+        function scrollr() {
+            var right = document.querySelector(".scroll-images")
+            right.scrollBy(-350, 0)
+        }
+    </script>
+</body>
+</html>

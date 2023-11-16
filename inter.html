@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza</title>
+</head>
+<body>
+    <div class="header">
+
+        <video autoplay loop muted plays-inline class="bg-video">
+            <source src="image/backvd.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <img src="image/logoo.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Pizzeria</a></li>
+                <li><a href="pizzas.html">Pizzas</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>PIZZA</h1>
+            <a href="pizzas.html">Try It</a>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navbar = document.querySelector("ul");
+
+        hamburger.addEventListener('click', ()=>{
+            navbar.classList.toggle('slide')
+        });
+
+        hamburger.addEventListener('click', ()=>{
+            hamburger.classList.toggle('active')
+        });
+
+    </script>
+</body>
+</html>

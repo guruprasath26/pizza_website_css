@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="move">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" id="radio1" name="radios">
+                <input type="radio" id="radio2" name="radios">
+                <input type="radio" id="radio3" name="radios">
+
+                <div class="slide first">
+                    <img src="image/banner.jpg">
+                </div>
+                <div class="slide">
+                    <img src="image/banner4.jpg">
+                </div>
+                <div class="slide">
+                    <img src="image/banner1.jpg">
+                </div>
+                <div class="auto">
+                    <div class="auto-1"></div>
+                    <div class="auto-2"></div>
+                    <div class="auto-3"></div>
+                </div>
+            </div>
+
+            <div class="manual">
+                <label for="radio1" class="manuals"></label>
+                <label for="radio2" class="manuals"></label>
+                <label for="radio3" class="manuals"></label>
+            </div>
+        </div>
+        <nav>
+            <a href="inter.html"><img src="image/logoo.png" class="logo"></a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" id="active">Pizzeria</a></li>
+                <li><a href="#">Pizzas</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter = counter + 1;
+
+            if (counter > 3) {
+                counter = 1;
+            }
+        },3000);
+
+
+
+        const hamburger = document.querySelector(".hamburger");
+        const navbar = document.querySelector("ul");
+
+        hamburger.addEventListener('click', ()=>{
+            navbar.classList.toggle('slide-1')
+        });
+
+        hamburger.addEventListener('click', ()=>{
+            hamburger.classList.toggle('active')
+        });
+    </script>
+</body>
+</html>

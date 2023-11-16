@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="about.css">
+    <title>About</title>
+</head>
+<body>
+    <div class="header">
+        <!--NAVBAR-->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" id="radio1" name="radios">
+                <input type="radio" id="radio2" name="radios">
+                <input type="radio" id="radio3" name="radios">
+
+                <div class="slide first">
+                    <img src="image/banner-1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="image/banner-2.webp">
+                </div>
+                <div class="slide">
+                    <img src="image/banner-3.webp">
+                </div>
+                <div class="auto">
+                    <div class="auto-1"></div>
+                    <div class="auto-2"></div>
+                    <div class="auto-3"></div>
+                </div>
+            </div>
+
+            <div class="manual">
+                <label for="radio1" class="manuals"></label>
+                <label for="radio2" class="manuals"></label>
+                <label for="radio3" class="manuals"></label>
+            </div>
+        </div>
+
+        <!--Slideshow-->
+        <nav>
+            <a href="inter.html"><img src="image/logoo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" id="active">Pizzeria</a></li>
+                <li><a href="pizzas.html">Pizzas</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+    </div>
+
+    <!--FOUNDER-->
+    <div class="about" style="background-color: black; color: white;">
+        <img src="image/founder.webp">
+        <div class="more">
+            <h1>Founder</h1>
+            <p><span>Dan & Frank carney</span> ipsum dolor sit amet consectetur adipisicing elit. Commodi inventore temporibus facere provident nostrum excepturi, ipsa possimus! Eligendi delectus maiores iste sed quisquam impedit incidunt nam in dolorem.</p>
+            <a href="#">Read more</a>
+        </div>
+    </div>
+
+    <!--PRODUCT-->
+    
+    <div class="about" style="background-color: orange;">
+        <div class="more">
+            <h1>Products</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi inventore temporibus facere provident nostrum excepturi, ipsa possimus! Eligendi delectus maiores iste sed quisquam impedit incidunt nam in dolorem.</p>
+            <a href="#">Read more</a>
+        </div>
+        <img src="image/product.png" class="product">
+    </div>
+
+    <!--DINNING-->
+    <div class="about" style="background: green;">
+        <img src="image/dinning.jpg">
+        <div class="more">
+            <h1>Dinnings</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi inventore temporibus facere provident nostrum excepturi, ipsa possimus! Eligendi delectus maiores iste sed quisquam impedit incidunt nam in dolorem.</p>
+            <a href="#">Read more</a>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+
+    <div class="footer">
+        <table>
+            <tr>
+                <th>Order Now</th>
+                <th>About</th>
+                <th>Our Policies</th>
+                <th>Visit Us</th>
+            </tr>
+            <tr>
+                <td><a href="#">Deals</a></td>
+                <td><a href="#">About Us</a></td>
+                <td><a href="#">Privacy</a></td>
+                <td><a href="#">Locate a store</a></td>
+                
+            </tr>
+            <tr>
+                <td><a href="#">Pizza</a></td>
+                <td><a href="#">Contactless delivery</a></td>
+                <td><a href="#">Terms & Conditions</a></td>
+                <td><a href="#">Global Blog</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Sizes</a></td>
+                <td><a href="#">Nutrition</a></td>
+                <td><a href="#">Responsible disclosure</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Drinks</a></td>
+                <td></td>
+                <td><a href="#">FAQs & Help</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Desserts</a></td>
+            </tr>
+        </table>
+        <div class="download">
+            <a href="#"><img src="image/apple.png"></a>
+            <a href="#"><img src="image/android.png"></a>
+        </div>
+        <div class="icons">
+            <div class="all-icons">
+                <h2>Follow Us</h2>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <form>
+            <h2>HEAR IT FIRST</h2>
+            <input type="text" name="Email" placeholder="Email address...">
+            <input type="submit" value=">">
+        </form>
+        <div class="ending">
+            <p>
+                Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh pizza delivered at your doorstep in less than thirty<br>minutes. *T&C Apply.<br>Hurry up and place your order now!<br>© 2022 Pizza Hut India. All rights reserved. License Number: 10017011004220
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        /*navbar*/
+        const hamburger = document.querySelector(".hamburger");
+        const navbar = document.querySelector("ul");
+
+        hamburger.addEventListener('click', ()=>{
+            navbar.classList.toggle('slide-1')
+        });
+
+        hamburger.addEventListener('click', ()=>{
+            hamburger.classList.toggle('active')
+        });
+
+        /*slideshow*/
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter = counter + 1;
+
+            if (counter > 3) {
+                counter = 1;
+            }
+        },3000);
+    </script>
+</body>
+</html>
